@@ -1,0 +1,22 @@
+
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb:your_mongo_url
+      - REDIS_URL=redis://redis:6379
+      - GOOGLE_API_KEY=your-google-api-key
+    depends_on:
+      - mongo
+      - redis
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
