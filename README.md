@@ -1,18 +1,24 @@
-Here’s an updated `README.md` for the repository, with detailed steps someone should follow to set it up on their local system:
+# FAQ Management System
 
-```markdown
-# Hiring Test Repository
+Node.js/Express-based FAQ management system with multilingual support, rich text editing, and a REST API. The system provides automatic translation into Hindi and Bengali and features a modern admin interface for content management.
 
-Welcome to the [BharatFD](https://bharatfd.com) **Hiring Repository**. This repository contains test assignments for backend and frontend developers.
+### **Features**
+- ✅ **FAQ Creation & Management** with rich text editing.
+- ✅ **Automatic Translation** to Hindi and Bengali using Google Translate.
+- ✅ **REST API** for programmatic access to FAQ data.
+- ✅ **Admin Interface** with translation preview and content management.
+- ✅ **Real-Time Translation Status Indicators**.
+- ✅ **Caching** with Redis for improved performance.
+- ✅ **Comprehensive Test Coverage** to ensure reliability.
+- ✅ **Dockerized Deployment** for easy setup and portability.
 
-## 📌 Available Tests
-### **Backend Test (Node.js/Express)**
-The backend test evaluates your ability to:
-- Work with Express models, API development, and multilingual support.
-- Integrate WYSIWYG editors and handle caching efficiently.
-- Follow best practices for Git, documentation, and testing.
-
-For full details, see: **[backend.md](backend.md)**
+### **Tech Stack**
+- **Django**: Backend framework for building the API and handling requests.
+- **MongoDB**: NoSQL database to store FAQ data.
+- **Redis**: Caching system to store translated FAQ data for fast access.
+- **Google Translate API**: For automatic multilingual translation of FAQ content.
+- **Mocha/Chai**: Testing framework for unit and integration testing.
+- **Docker**: Containerization for easy deployment and setup.
 
 ---
 
@@ -145,6 +151,8 @@ DELETE /api/faqs/:id
 
 ---
 
+![Project Structure](assets/faq-dashboard.png)  <!-- Adding image -->
+
 ## 🧪 Docker Setup (Optional)
 
 If you'd like to run the application using Docker, follow these steps:
@@ -162,30 +170,6 @@ If you'd like to run the application using Docker, follow these steps:
    ```
 
 ---
-
-## 📋 Submission Guidelines
-
-If you’re working on this as part of an assignment or test, please follow these submission steps:
-
-1. **Complete the assignment** and commit your changes.
-2. **Open an issue** in this repository with the relevant tag (`backend` or `frontend`, depending on the test you're applying for).
-3. **Tag @theakshaydhiman** in the issue, and your code will be reviewed.
-4. **Include the link to your GitHub repository**, ensuring it is **publicly accessible**.
-
-### **Repository Requirements**
-- Include a **detailed README** that covers:
-  - Installation steps
-  - API usage examples
-  - Any additional notes or instructions
-- Use **Git for version control** and make meaningful commit messages.
-
----
-
-## 🚀 Need Help?
-
-If you have any questions or need further clarification, feel free to **open an issue** in this repository.
-
-Happy coding! 🎉
 ```
 
 This `README.md` guides the user through setting up the project locally, including installation, environment configuration, and running the application. Let me know if you'd like to make any changes!
